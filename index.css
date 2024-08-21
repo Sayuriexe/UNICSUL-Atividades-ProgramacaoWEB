@@ -1,65 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
 }
-
-.form-container {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #8b4512;
-    border-radius: 8px;
-    box-shadow: 3px 3px 0px 0px #000000;
+table::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #aaaaaa 20%, #83a24d 20% 40%, #456ca2 40% 60%, #6c548b 60% 80%, #d88336 80%);
 }
-
-h1, p {
-    color: #fff;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
+    font-size: 16px;
+    width: 20%;
 }
-
-.input-group {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #8b4512;
-    border-radius: 8px;
-    box-shadow: 1.5px 1.5px 0px 0px #000000;
+th {
+    background-color: #f2f2f2;
 }
-
-.input-group label {
-    color: #fff;
+.period {
+    background-color: #f2f2f2;
 }
-
-input, select, textarea {
-    width: calc(100% - 22px);
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    background-color: #f6ddb5;
-    color: #000;
-    margin: 5px 0 15px 0;
+.android {
+    background-color: #e1f2c3;
 }
-
-.button-container {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #8b4512;
-    text-align: center;
+.ios {
+    background-color: #c6d8f1;
 }
-
-button {
-    background-color: #000000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-    box-shadow: none;
-    margin-top: 10px;
+.windows-phone {
+    background-color: #dfd5ed;
 }
-
-button:hover {
-    background-color: #333333;
+.others {
+    background-color: #f1dcc9;
+}
+td {
+    background-color: #f9f9f9;
 }
